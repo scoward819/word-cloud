@@ -1,0 +1,12 @@
+.word-cloud-details {
+    flex: 1 1 auto;
+    padding: 6px 10px;
+}
+
+.positive-mentions {
+    color: #008000;
+}
+
+.negative-mentions {
+    color: #FF0000;
+}

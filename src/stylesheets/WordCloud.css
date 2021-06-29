@@ -1,0 +1,65 @@
+.word-cloud-container {
+    align-items: center;
+    display: flex;
+    flex: 1 1 70%;
+    height: 100%;
+    justify-content: center;
+}
+
+.word-cloud-item {
+    cursor: pointer;
+    position: absolute;
+    text-decoration: underline transparent;
+    transition: .2s;
+}
+
+.word-cloud-item.positive {
+    color: #008000;
+}
+
+.word-cloud-item.neutral {
+    color: #808080;
+}
+
+.word-cloud-item.negative {
+    color: #FF0000;
+}
+
+.word-cloud-item.selected {
+    text-decoration: underline;
+}
+
+.word-cloud-item:hover {
+    text-decoration: underline;
+}
+
+.loading {
+    -webkit-animation: flickerAnimation 1s infinite;
+    -moz-animation: flickerAnimation 1s infinite;
+    -o-animation: flickerAnimation 1s infinite;
+    animation: flickerAnimation 1s infinite;
+}
+
+@keyframes flickerAnimation {
+    0%   { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-o-keyframes flickerAnimation {
+    0%   { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes flickerAnimation {
+    0%   { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-webkit-keyframes flickerAnimation {
+    0%   { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
