@@ -7,9 +7,9 @@ import {
 } from 'react';
 import { TopicDetails } from './TopicDetails';
 import { WordCloud } from './WordCloud';
-import { Topic } from './topic';
-import topicsJson from './topics.json';
-import './stylesheets/App.css';
+import { Topic } from '../topic';
+import topicsJson from '../topics.json';
+import '../stylesheets/App.css';
 
 const App: FunctionComponent = (): ReactElement => {
     const [data, setData] = useState<Topic[]>([]),

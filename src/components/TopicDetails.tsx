@@ -3,8 +3,8 @@ import {
     ReactElement,
     Fragment
 } from 'react';
-import { Topic } from './topic';
-import './stylesheets/TopicDetails.css';
+import { Topic } from '../topic';
+import '../stylesheets/TopicDetails.css';
 
 interface ITopicDetailsProps {
     /**
