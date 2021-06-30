@@ -59,6 +59,11 @@ interface IWordCloudProps {
 }
 
 /**
+ * The number of thresholds that determine each word's font size.
+ */
+const numberOfFontSizeThresholds = 6;
+
+/**
  * The threshold to determine a negative sentiment score.
  */
 const sentimentScoreNegativeThreshold = 40;
@@ -125,8 +130,8 @@ export const WordCloud: FunctionComponent<IWordCloudProps> = (props): ReactEleme
             wordFontSizeThresholds: IFontSizeThresholds[] = [];
         
         // Generate the thresholds for the font sizes.
-        for (let i = 1; i <= 6; i++) {
-            const n: number = maxTopicVolume / 6;
+        for (let i = 1; i <= numberOfFontSizeThresholds; i++) {
+            const n: number = maxTopicVolume / numberOfFontSizeThresholds;
     
             wordFontSizeThresholds.push({
                 fontSize: i * 12,
